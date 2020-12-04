@@ -4,6 +4,10 @@
   Vim.Setting.ShowGui()
 Return
 
+#If
+^Space::
+  Send #{Space}
+Return
 ; Check Mode
 #If WinActive("ahk_group " . Vim.GroupName)
 ^!+c::
